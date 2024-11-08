@@ -15,4 +15,9 @@ public class HPBar : MonoBehaviour
     {
         slider.value = pct;
     }
+
+    private void Update()
+    {
+        slider.transform.LookAt(Camera.main.transform);
+    }
 }
